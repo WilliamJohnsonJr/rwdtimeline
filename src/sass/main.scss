@@ -1,0 +1,49 @@
+html {
+	font-size: 16px;
+}
+
+.container {
+    max-width: 68.75em;
+    margin-top: 1.9375em;
+}
+
+.blockContainer {
+    width: 76%;
+    height: 34.25em;
+    margin-left: 13.4%;
+    margin-bottom: 1.875em;
+    overflow: hidden;
+}
+
+.blockHeader {
+    display: flex;
+    justify-content: space-between;
+    height: 4.0625em;
+}
+
+.date {
+	color: #C2D4DD;
+}
+
+.time{
+    color: #5AB7EB;
+    font-size: 1.5em;
+}
+
+.icon {
+    width: 13.5%;
+    height: 2.45em;
+    background: #46A4DA;
+    border-radius: 100%;
+    border: 0.5em solid #AFDCF8;
+}
+
+.msgContainer {
+    background: #6CBFEE;
+    color: white;
+    height: 100%;
+}
+
+.msgHeader {
+    height: 3.45em;
+}
