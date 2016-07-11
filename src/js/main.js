@@ -7,7 +7,7 @@ for (var x=0; x<7; x++) {
 					<div class="date">
 					00/00/00
 					</div>
-					<div class="time">
+					<div class="time" id="time${x}">
 					99:99
 					</div>
 				</div>
@@ -15,7 +15,11 @@ for (var x=0; x<7; x++) {
 					<i class="icon${x} fa fa-mobile fa-2x"></i>
 				</div>
 			</div>
-			<div class="msgContainer">
+			<div class="msgContainer" id="mc${x}">
+				<div class="triangle1" id="tri1-${x}">
+				</div>
+				<div class="triangle2" id="tri2-${x}">
+				</div>
 				<div class="msgHeader header${x}">
 				Header
 				</div>

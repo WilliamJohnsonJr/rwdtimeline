@@ -29,8 +29,13 @@ i {
     height: 4.0625em;
 }
 
-.1, .3, .5 {
+#mc1, #mc3, #mc5{
+	background: #3594CB;
+	border: 1px solid darken(#3493CA, 10%);
+}
 
+#time1, #time3, #time5 {
+	color: #3192CA;
 }
 
 .date {
@@ -61,7 +66,40 @@ i {
 .msgContainer {
     background: #6CBFEE;
     color: white;
-    overflow: auto;
+    border: 1px solid lighten(#2A8EC8, 15%);
+    border-radius: 0.25em;
+    overflow: visible;
+    position: relative;
+}
+
+.triangle1 {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 11px 11px 11px;
+border-color: transparent transparent lighten(#2A8EC8, 15%) transparent;
+position: absolute;
+    top: -0.7em;
+    left: 1.1em;
+}
+
+.triangle2{
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 10px 10px 10px;
+border-color: transparent transparent #6CBFEE transparent;
+position: absolute;
+    top: -0.59em;
+    left: 1.2em;
+}
+
+#tri1-1, #tri1-3, #tri1-5 {
+	border-color: transparent transparent darken(#3493CA, 10%) transparent;
+}
+
+#tri2-1, #tri2-3, #tri2-5 {
+	border-color: transparent transparent #3594CB transparent;
 }
 
 .msgHeader {
