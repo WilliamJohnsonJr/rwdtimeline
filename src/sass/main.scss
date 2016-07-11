@@ -66,5 +66,14 @@ i {
 }
 
 .msgHeader {
-    height: 3.45em;
+    height: 1.75em;
+    padding-top: 0.85em;
+    padding-left: 0.6em;
+    font-size: 1.4em;
+    border: 1px solid black;
+}
+
+.msg {
+    padding: 1.5em 1em;
+    font-size: 0.9em;
 }
