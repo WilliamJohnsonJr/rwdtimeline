@@ -12,7 +12,7 @@ for (var x=0; x<7; x++) {
 					</div>
 				</div>
 				<div class="icon">
-				Phone
+					<i class="icon${x} fa fa-mobile fa-2x"></i>
 				</div>
 			</div>
 			<div class="msgContainer">
@@ -26,3 +26,10 @@ for (var x=0; x<7; x++) {
 		</div>
 		`)
 }
+
+console.log($(".icon1").html());
+
+$(".icon1").removeClass("fa-mobile fa-2x").addClass("fa-tv fa-lg");
+$(".icon2").removeClass("fa-mobile fa-2x").addClass("fa-envelope-o fa-lg");
+$(".icon4").removeClass("fa-mobile").addClass("fa-globe");
+$(".icon5").removeClass("fa-mobile fa-2x").addClass("fa-tv fa-lg");
