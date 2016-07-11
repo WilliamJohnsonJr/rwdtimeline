@@ -4,7 +4,7 @@ for (var x=0; x<7; x++) {
 	$(".container").append(`<div class="blockContainer ${x}">
 			<div class="blockHeader">
 				<div class="dateTime">
-					<div class="date">
+					<div class="date" id="date${x}">
 					00/00/00
 					</div>
 					<div class="time" id="time${x}">
@@ -28,10 +28,24 @@ for (var x=0; x<7; x++) {
 				</div>
 			</div>
 		</div>
-		`)
-}
+		`);
+};
 
-console.log($(".icon1").html());
+$("#date0").text("4/10/13");
+$("#date1").text("4/11/13");
+$("#date2").text("4/13/13");
+$("#date3").text("4/15/13");
+$("#date4").text("4/16/13");
+$("#date5").text("4/17/13");
+$("#date6").text("4/18/13");
+
+$("#time0").text("18:30");
+$("#time1").text("12:04");
+$("#time2").text("05:36");
+$("#time3").text("13:15");
+$("#time4").text("21:30");
+$("#time5").text("12:11");
+$("#time6").text("09:56");
 
 $(".icon1").removeClass("fa-mobile fa-2x").addClass("fa-tv fa-lg");
 $(".icon2").removeClass("fa-mobile fa-2x").addClass("fa-envelope-o fa-lg");
