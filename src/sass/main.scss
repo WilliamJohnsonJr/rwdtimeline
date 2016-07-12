@@ -6,21 +6,15 @@ i {
     color: white;
 }
 
-// fa-mobile [&#xf10b;]
-// fa-tv (alias) [&#xf26c;]
-// fa-envelope-o [&#xf003;]
-// fa-globe [&#xf0ac;]
-
 .container {
-    max-width: 68.75em;
-    margin-top: 1.9375em;
+    margin: 1.9375em auto;
 }
 
 .blockContainer {
-    width: 76%;
+    width: 71%;
     margin-left: 13.4%;
     margin-bottom: 1.875em;
-    overflow: auto;
+    overflow: visible;
 }
 
 .blockHeader {
@@ -79,8 +73,8 @@ border-style: solid;
 border-width: 0 11px 11px 11px;
 border-color: transparent transparent lighten(#2A8EC8, 15%) transparent;
 position: absolute;
-    top: -0.7em;
     left: 1.1em;
+    top: -0.7em;
 }
 
 .triangle2{
@@ -90,8 +84,8 @@ border-style: solid;
 border-width: 0 10px 10px 10px;
 border-color: transparent transparent #6CBFEE transparent;
 position: absolute;
-    top: -0.59em;
     left: 1.2em;
+    top: -0.59em;
 }
 
 #tri1-1, #tri1-3, #tri1-5 {
@@ -103,14 +97,107 @@ position: absolute;
 }
 
 .msgHeader {
-    height: 1.75em;
-    margin: 0.85em 0.6em 0 0.6em;
-    font-size: 1.4em;
+    padding-bottom: 0.65em;
+    margin: 0.85em 5% 0 5%;
+    font-size: 1.27em;
     border: 1px solid white;
     border-width: 0 0 1px 0;
 }
 
 .msg {
-    padding: 1.5em 1em;
+	padding: 1.4em 5% 1.8em 5%;
     font-size: 0.9em;
+    line-height: 1.5;
+}
+
+@media screen and (min-width: 730px) {
+
+	.blockContainer{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+    width: 95%;
+	}
+
+	.6 {
+		overflow: hidden;
+	}
+
+	.blockHeader {
+		width: 25%;
+		justify-content: flex-end;
+		position: relative;
+	}
+
+	.dateTime{
+    position: absolute;
+    right: 58%;
+	}
+
+	.date{
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.icon {
+    position: absolute;
+    top: -0.5em;
+    right: -1%;
+	}
+
+	.icon:before{
+    content: "";
+    width: 0;
+    height: 1200%;
+    border: 0.3em solid #AFDCF8;
+    position: absolute;
+    left: 38.3%;
+    top: 2.5em;
+	}
+
+	.triangle1{
+		border-width: 11px 11px 11px 0;
+		border-color: transparent lighten(#2A8EC8, 15%) transparent transparent;
+		left: -0.7em;
+ 		top: 0.45em;
+	}
+
+	.triangle2{
+	    border-width: 10px 10px 10px 0;
+	    border-color: transparent #6CBFEE transparent transparent;
+	    left: -0.59em;
+	    top: 0.5em;
+	}
+
+	#tri1-1, #tri1-3, #tri1-5 {
+		border-color: transparent darken(#3493CA, 10%) transparent transparent;
+	}
+
+	#tri2-1, #tri2-3, #tri2-5 {
+		border-color: transparent #3594CB transparent transparent;
+	}
+
+	.msgContainer{
+    margin-left: 2.1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    width: 85%;
+    position: relative;
+	}
+
+	.msgHeader{
+	padding: 1.5em 0% 0.4em 0%;
+    margin: 0 5% 0em 5%;
+    font-size: 1.8em;
+    border: 1px solid white;
+    border-width: 0 0 1px 0;
+	}
+
+	.msg{
+    padding: 1.4em 5% 3.1em 5%;
+    font-size: 1.1em;
+    line-height: 1.5;
+	}
 }
